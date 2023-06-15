@@ -1,8 +1,6 @@
 import '@styles/global.css'
-
 import Nav from '@components/nav'
-
-
+import SessionProvider from "./SessionProvider";
 
 
 export const metadata = {
@@ -10,23 +8,28 @@ export const metadata = {
     description: 'Productivity app that acts as a second brain'
 }
 
-export default function RootLayout({
+
+export default async function RootLayout({
+
     children,
   }: {
-    children: React.ReactNode
+    children: React.ReactNode;
+    
   }) {
+  
+  
+
+  
   return (
     <html lang="en">
+      <SessionProvider session={null}>
         <body>
-            <div className='main'>
-                <div className="gradient" />
-            </div>
             <main className='app'>
                 <Nav />
                 {children}
-                
             </main>
         </body>
+      </SessionProvider>
     </html>
   )
 }

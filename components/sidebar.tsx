@@ -33,6 +33,10 @@ const Sidebar: React.FC = () => {
           Journals
         </Link>
 
+        <Link href='/login' className='block py-6 px-6 font-black text-white hover:bg-gray-700'>
+          Login
+        </Link>
+
       </Drawer>
   )
 }

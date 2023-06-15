@@ -1,11 +1,12 @@
-const Todo = () => {
-    return (
-      <section className="w-full flex-center flex-col">
-          <h1 className="text-center">
-              To-Do page!!
-          </h1>
-      </section>
-    )
-  }
+'use client';
+
+
+
+export default function Todo(){
   
-  export default Todo
+
+  return (
+    <div>to do page</div>
+  )
+}
+  
